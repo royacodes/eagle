@@ -5,6 +5,7 @@ import Footer from './Footer';
 import SearchBar from './SearchBar';
 import CustomFilter from './CustomFilter';
 import SearchGame from './SearchGame';
+import GameCard from './GameCard';
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Footer,
     SearchBar,
     CustomFilter,
-    SearchGame
+    SearchGame,
+    GameCard
 }
