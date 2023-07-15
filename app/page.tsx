@@ -1,7 +1,8 @@
 import { CustomFilter, GameCard, Hero, SearchBar } from "@/components";
 import { fetchGames } from "@/utils";
 import Image from "next/image";
-import RootLayout from "./RootLayout";
+import RootLayout from "./layout";
+
 export default async function Home() {
   const allGames = await fetchGames();
 
@@ -25,7 +26,7 @@ export default async function Home() {
           {!isDataEmpty ? (
             <section>
               <div className="home__games-wrapper">
-                {allGames?.map((game) => (
+                {allGames?.map((game: any) => (
                   <GameCard game={game} />
                 ))}
               </div>

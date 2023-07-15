@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import type { ReactElement } from "react";
-import { css } from "@emotion/react";
 import { Card } from "@/components";
 import {
   Balance,
@@ -24,7 +22,7 @@ interface IProps {
   isActive: boolean;
 }
 
-const GamePage = ({ chips, isActive, connected }: IProps) => {
+const GamePage = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <Image
@@ -41,7 +39,7 @@ const GamePage = ({ chips, isActive, connected }: IProps) => {
           <PlayerName>
             {/* Show the player's name or the last action */}
           </PlayerName>
-          {<Balance>{chips}</Balance>}
+          {<Balance>1000</Balance>}
         </PlayerNameWrapper>
         {<PlayerEmoji>{}</PlayerEmoji>}
       </PlayerInfo>
