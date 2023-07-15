@@ -14,6 +14,7 @@ Technologies and Languages we used:
 Libraries we used:
 
 - [Headlessui](https://headlessui.com/react/) - learn about Headlessui.
+- [Emotion](https://emotion.sh/docs/typescript) - learn about Emotion.
 
 ## Icons
 
@@ -21,6 +22,4 @@ Icons we used:
 
 - [game-logo.svg](https://iconscout.com/icon/game-9)
 
-
 ## Deployment
-

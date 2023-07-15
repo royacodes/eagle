@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { GameProps } from "@/types";
 import CustomButton from "./CustomButton";
+import { useRouter } from "next/navigation";
 
 interface GameCardProps {
   game: GameProps;
@@ -11,6 +12,8 @@ interface GameCardProps {
 const GameCard = ({ game }: GameCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const { id, name, rule, player } = game;
+  const router = useRouter();
+
   return (
     <div className="game-card group">
       <div className="game-card__content">
@@ -37,7 +40,7 @@ const GameCard = ({ game }: GameCardProps) => {
             containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/poker.svg"
-            handleClick={() => setIsOpen(true)}
+            handleClick={() => router.push(`/game/${name}`)}
           />
         </div>
       </div>
