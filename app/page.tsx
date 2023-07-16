@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import { CustomFilter, GameCard, Hero, SearchBar } from "@/components";
 import { fetchGames } from "@/utils";
 import Image from "next/image";

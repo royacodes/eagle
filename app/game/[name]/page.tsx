@@ -1,19 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import { Card } from "@/components";
-import {
-  Balance,
-  CardsWrapper,
-  faceDownCards,
-  PlayerEmoji,
-  playerWidget,
-  PlayerName,
-  PlayerInfo,
-  PlayerTimerBar,
-  PlayerHighlight,
-  PlayerNameWrapper,
-} from "./style";
 import GameLayout from "./GameLayout";
 
 interface IProps {
@@ -33,16 +19,6 @@ const GamePage = () => {
         className="max-w-full max-h-full"
       />
       <Card card="10d" />
-
-      <PlayerInfo>
-        <PlayerNameWrapper>
-          <PlayerName>
-            {/* Show the player's name or the last action */}
-          </PlayerName>
-          {<Balance>1000</Balance>}
-        </PlayerNameWrapper>
-        {<PlayerEmoji>{}</PlayerEmoji>}
-      </PlayerInfo>
 
       {/* Background images as srcSet for better responsive support */}
       {/* <img

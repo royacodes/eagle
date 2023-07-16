@@ -1,7 +1,5 @@
-"use client"
-import { Footer, Navbar } from '@/components'
-import './globals.css'
-
+import { Footer, Navbar } from "@/components";
+import "./globals.css";
 
 // export const metadata = {
 //   title: 'Game Hub',
@@ -11,15 +9,15 @@ import './globals.css'
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className='relative'>
+      <body className="relative">
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
-  )
+  );
 }
